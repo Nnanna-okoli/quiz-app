@@ -1,0 +1,89 @@
+/* installing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300&display=swap');
+
+/* default box sizing */
+* {
+    box-sizing: border-box;
+}
+/* adding google fonts to all body content */
+body {
+    /*import fonts from google*/
+    font-family: 'Jost', sans-serif;
+
+    /*sets all margin properties to 0 */
+    margin: 0;
+    /* stretches bg image to full view height of browser*/
+    min-height: 100vh;
+
+    /* adds background graidient */
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    
+    /* sets all contents display then aligns them centrally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-container {
+    /* sets color to white for containerv*/
+    background-color: #ffffff;   
+    /*rounds the borders */
+    border-radius: 10px;
+    /*sets container shadows*/
+    box-shadow: 0 0 10px 5px rgba(100, 100, 100, 0.1);
+    width: 500px;
+    /* max-width 100% to make it responsive */
+    max-width: 100%;
+
+    /* to get rid of the pointed broders from the button corners*/
+    overflow: hidden;
+    }
+
+    .quiz-header {
+        padding: 2rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* sets button properties */
+    button {
+        background-color: #efefef;
+        display: block;
+        width: 100%;
+        font-family: inherit;
+        padding: 2rem;
+        border: none;
+        font-size: 1.3rem;
+    }
+
+    /* sets button properties on hover*/
+    button:hover {
+        background-color: #60b8bb;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    /* removes any default spacing around the header */
+    .question-header {
+        font-size: 1.3rem;
+        margin: 1rem 0;
+        text-align: left;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    /* adds spacing between the list itmes*/
+    ul li {
+        margin: .5rem 0;
+}
+
+/* sets cursor to pointer for the list items */
+ul li label {
+    cursor: pointer;
+}
